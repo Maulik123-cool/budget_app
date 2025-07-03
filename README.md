@@ -5,6 +5,9 @@ Budget Buddy is an easy-to-use app that helps you keep track of your money. You 
 ![image](https://github.com/user-attachments/assets/89b85751-7001-4e2a-bdde-552c75f9242a)
 ![image](https://github.com/user-attachments/assets/3c5a43a9-a254-4c90-a383-9a2cea7a2d74)
 
+# IMPORTANT 
+always remmber to put the code into vs code and go to http://127.0.0.1:5000/dashboard the you can play the app the code should be running into vs code
+
 ## Features
 
 - Add income and expenses with description, amount, type, and category  
