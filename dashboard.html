@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <h1>Track Your Budget</h1>
+    <form method="post">
+        <input name="description" placeholder="Description" required>
+        <input name="amount" placeholder="Amount" type="number" step="0.01" required>
+        <select name="type">
+            <option value="income">Income</option>
+            <option value="expense">Expense</option>
+        </select>
+        <input name="category" placeholder="Category (e.g. Food, Rent)">
+        <button type="submit">Add Transaction</button>
+    </form>
+
+    <h2>All Transactions</h2>
+    <ul>
+        {% for t in transactions %}
+            <li>{{ t[1] }} - ${{ t[2] }} ({{ t[3] }}, {{ t[4] }})</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
