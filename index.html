@@ -1,13 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Budget App</title>
-    <link rel="stylesheet" href="/static/style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Budget Tracker</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to Smart Budget Tracker</h1>
-        <a href="/dashboard" class="btn">Go to Dashboard</a>
-    </div>
+  <div class="container">
+    <h1>💸 Budget Tracker</h1>
+    
+    <form id="transaction-form">
+      <input type="text" id="description" placeholder="Description" required />
+      <input type="number" id="amount" placeholder="Amount" step="0.01" required />
+      <select id="type">
+        <option value="income">Income</option>
+        <option value="expense">Expense</option>
+      </select>
+      <input type="text" id="category" placeholder="Category (e.g. Food, Rent)" />
+      <button type="submit">Add Transaction</button>
+    </form>
+
+    <h2>📜 All Transactions</h2>
+    <ul id="transaction-list"></ul>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
