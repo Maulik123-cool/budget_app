@@ -52,19 +52,46 @@ always remmber to put the code into vs code and go to http://127.0.0.1:5000/dash
 - **HTML & CSS**: To create the user interface, forms, and style the pages.
 - **Jinja2 Templates**: Flask’s built-in templating engine to dynamically generate HTML based on data.
 
-# How It Works Under the Hood
+# 💰 Budget Tracker (Static Web App)
 
-- When you start the app (`python app.py`), Flask creates the web server.
-- The app checks for a database and creates the transactions table if it doesn’t exist.
-- When you visit `/`, it shows the homepage.
-- When you visit `/dashboard`, the app fetches all transactions from the database and shows them.
-- When you submit the form on `/dashboard`, Flask receives the data, inserts it into the database, then reloads the page with updated data.
-- The template engine fills the transaction list dynamically every time.
+A clean, simple budget tracking app built with HTML, CSS, and JavaScript — no backend required!
 
- # Future Ideas
+---
 
-- Add user login for personal accounts.
-- Show spending charts with JavaScript libraries like Chart.js.
-- Set monthly saving goals with alerts.
-- Add the ability to edit or delete transactions.
-- Responsive design for mobile use.
+## 🎮 Live Demo
+
+👉 [Click here to try it on GitHub Pages](https://your-username.github.io/budget-tracker)  
+*(Replace `your-username` with your GitHub username)*
+
+---
+
+## 🔍 Features
+
+- 💵 Track income & expenses
+- 🗂️ Add categories like "Food", "Rent", etc.
+- 🔁 Data saved automatically using `localStorage`
+- 🧠 No Python, Flask, or database needed
+- 🌐 Fully hostable on GitHub Pages
+
+---
+
+## 🛠️ How to Use
+
+1. Fill in:
+   - Description
+   - Amount
+   - Type (income or expense)
+   - Category (optional)
+2. Click **"Add Transaction"**
+3. Your transaction appears below and is saved instantly.
+
+---
+
+## 🌐 How to Host
+
+1. Upload `index.html`, `style.css`, and `script.js` to a GitHub repo
+2. Go to `Settings > Pages`
+3. Set:
+   - Source: `main`
+   - Folder: `/ (root)`
+4. Your app is live at:
